@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Comprehensive Git Guide</h1>
+    </header>
+    <main>
+        <section id="install-git">
+            <h2>Install and Setup Git</h2>
+            <div class="command">
+                <code>brew install git</code>
+                <button onclick="copyToClipboard('brew install git')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git config --global user.name "Your Name"</code>
+                <button onclick="copyToClipboard('git config --global user.name \"Your Name\"')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git config --global user.email "your_email@example.com"</code>
+                <button onclick="copyToClipboard('git config --global user.email \"your_email@example.com\"')">Copy</button>
+            </div>
+            <div class="command">
+                <code>mkdir examplegit</code>
+                <button onclick="copyToClipboard('mkdir examplegit')">Copy</button>
+            </div>
+            <div class="command">
+                <code>cd examplegit</code>
+                <button onclick="copyToClipboard('cd examplegit')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git init</code>
+                <button onclick="copyToClipboard('git init')">Copy</button>
+            </div>
+            <div class="command">
+                <code>touch index.html</code>
+                <button onclick="copyToClipboard('touch index.html')">Copy</button>
+            </div>
+            <div class="command">
+                <code>echo "&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Example&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Hello, world!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;" > index.html</code>
+                <button onclick="copyToClipboard('echo \"&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Example&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Hello, world!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;\" > index.html')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git add .</code>
+                <button onclick="copyToClipboard('git add .')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git commit -m "Initial commit"</code>
+                <button onclick="copyToClipboard('git commit -m \"Initial commit\"')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git remote add origin https://github.com/yourusername/examplegit.git</code>
+                <button onclick="copyToClipboard('git remote add origin https://github.com/yourusername/examplegit.git')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git push -u origin master</code>
+                <button onclick="copyToClipboard('git push -u origin master')">Copy</button>
+            </div>
+        </section>
+        <section id="update-repo">
+            <h2>Update and Push Changes</h2>
+            <div class="command">
+                <code>git pull origin master</code>
+                <button onclick="copyToClipboard('git pull origin master')">Copy</button>
+            </div>
+            <div class="command">
+                <code>nano index.html</code>
+                <button onclick="copyToClipboard('nano index.html')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git add index.html</code>
+                <button onclick="copyToClipboard('git add index.html')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git commit -m "Updated index.html with new content"</code>
+                <button onclick="copyToClipboard('git commit -m \"Updated index.html with new content\"')">Copy</button>
+            </div>
+            <div class="command">
+                <code>git push origin master</code>
+                <button onclick="copyToClipboard('git push origin master')">Copy</button>
+            </div>
+        </section>
+        <!-- Sections for Basic Commands, Branching and Merging, etc., should follow the same pattern -->
+    </main>
+    <footer>
+        <p>Copyright © 2024 All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

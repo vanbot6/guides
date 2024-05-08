@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Snippet Collection</title>
+    <title>JavaScript Snippet Collection</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,344 +23,203 @@
         .snippet-content {
             padding: 10px;
         }
-
-        /* Text Color */
-        .text-color {
-            color: red;
+        .button {
+            padding: 5px 10px;
+            cursor: pointer;
         }
-
-        /* Background Color */
-        .background-color {
-            background-color: #e7e7e7;
+        .output-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
         }
-
-        /* Font Size */
-        .font-size {
-            font-size: 20px;
-        }
-
-        /* Font Style */
-        .font-style {
-            font-style: italic;
-        }
-
-        /* Text Alignment */
-        .text-center {
-            text-align: center;
-        }
-
-        /* Border */
-        .border {
-            border: 2px solid blue;
-        }
-
-        /* Padding */
-        .padding {
-            padding: 15px;
-        }
-
-        /* Margin */
-        .margin {
-            margin: 15px;
-        }
-
-        /* Box Model */
-        .box-model {
-            margin: 10px;
-            padding: 15px;
-            border: 5px solid #333;
-            background: #f0f0f0;
-        }
-
-        /* Display */
-        .inline-block {
-            display: inline-block;
-            width: 150px;
-            border: 1px solid black;
-            text-align: center;
-        }
-
-        /* Position */
-        .position-relative {
-            position: relative;
-            left: 20px;
-        }
-
-        /* Float */
-        .float-left {
-            float: left;
-            width: 100px;
-            height: 100px;
-            background: #77dd77;
-        }
-
-        /* Clearfix */
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Opacity */
-        .opacity {
-            opacity: 0.5;
-        }
-
-        /* Hover Effect */
-        .hover-effect:hover {
-            background-color: #ccc;
-        }
-
-        /* Transition */
-        .transition {
-            transition: transform 0.2s;
-        }
-        .transition:hover {
-            transform: scale(1.1);
-        }
-
-        /* Transform */
-        .rotate {
-            transform: rotate(45deg);
-        }
-
-        /* Flexbox */
-        .flex-container {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        /* Grid */
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 10px;
-        }
-
-        /* Media Query */
-        @media (max-width: 600px) {
-            .responsive-text {
-                font-size: 14px;
-            }
-        }
-
-        /* Pseudo-classes */
-        .pseudo-classes a:visited {
-            color: green;
-        }
-
-        /* Pseudo-elements */
-        .pseudo-elements::before {
-            content: "Before ";
-            color: blue;
-        }
-        .pseudo-elements::after {
-            content: " After";
-            color: red;
-        }
-
-        /* Variables */
-        :root {
-            --main-color: coral;
-        }
-        .using-variable {
-            color: var(--main-color);
-        }
-
-        /* Keyframes and Animations */
-        @keyframes example {
-            from {background-color: red;}
-            to {background-color: yellow;}
-        }
-        .animation {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            animation-name: example;
-            animation-duration: 4s;
-        }
-
     </style>
 </head>
 <body>
 
-<!-- Text Color -->
+<!-- JavaScript to Change Content -->
 <div class="snippet">
-    <div class="snippet-title">Text Color</div>
-    <div class="snippet-content text-color">
-        This text is red.
-    </div>
-</div>
-
-<!-- Background Color -->
-<div class="snippet">
-    <div class="snippet-title">Background Color</div>
-    <div class="snippet-content background-color">
-        This has a grey background.
-    </div>
-</div>
-
-<!-- Font Size -->
-<div class="snippet">
-    <div class="snippet-title">Font Size</div>
-    <div class="snippet-content font-size">
-        This text is 20px in size.
-    </div>
-</div>
-
-<!-- Font Style -->
-<div class="snippet">
-    <div class="snippet-title">Font Style</div>
-    <div class="snippet-content font-style">
-        This text is italic.
-    </div>
-</div>
-
-<!-- Text Alignment -->
-<div class="snippet">
-    <div class="snippet-title">Text Alignment</div>
-    <div class="snippet-content text-center">
-        This text is centered.
-    </div>
-</div>
-
-<!-- Border -->
-<div class="snippet">
-    <div class="snippet-title">Border</div>
-    <div class="snippet-content border">
-        This box has a blue border.
-    </div>
-</div>
-
-<!-- Padding -->
-<div class="snippet">
-    <div class="snippet-title">Padding</div>
-    <div class="snippet-content padding">
-        This box has 15px padding.
-    </div>
-</div>
-
-<!-- Margin -->
-<div class="snippet">
-    <div class="snippet-title">Margin</div>
-    <div class="snippet-content margin">
-        This box has 15px margin.
-    </div>
-</div>
-
-<!-- Box Model -->
-<div class="snippet">
-    <div class="snippet-title">Box Model</div>
-    <div class="snippet-content box-model">
-        This box demonstrates the box model with margin, border, and padding.
-    </div>
-</div>
-
-<!-- Display -->
-<div class="snippet">
-    <div class="snippet-title">Display</div>
+    <div class="snippet-title">Change Content</div>
     <div class="snippet-content">
-        <div class="inline-block">Inline-block 1</div>
-        <div class="inline-block">Inline-block 2</div>
+        <button class="button" onclick="changeContent()">Change Text</button>
+        <div id="change-content">Click the button to change this text.</div>
     </div>
 </div>
 
-<!-- Position -->
+<!-- JavaScript to Change Style -->
 <div class="snippet">
-    <div class="snippet-title">Position</div>
-    <div class="snippet-content position-relative">
-        This box is moved 20px to the right.
-    </div>
-</div>
-
-<!-- Float and Clearfix -->
-<div class="snippet clearfix">
-    <div class="snippet-title">Float and Clearfix</div>
+    <div class="snippet-title">Change Style</div>
     <div class="snippet-content">
-        <div class="float-left"></div>
-        <div class="float-left"></div>
-        <!-- Clearfix is applied to the parent container -->
+        <button class="button" onclick="changeStyle()">Change Style</button>
+        <div id="change-style">Click the button to change my style.</div>
     </div>
 </div>
 
-<!-- Opacity -->
+<!-- JavaScript to Hide and Show Elements -->
 <div class="snippet">
-    <div class="snippet-title">Opacity</div>
-    <div class="snippet-content opacity">
-        This text has 0.5 opacity.
+    <div class="snippet-title">Hide and Show Elements</div>
+    <div class="snippet-content">
+        <button class="button" onclick="toggleVisibility()">Toggle Visibility</button>
+        <div id="toggle-element">Click the button to hide/show this text.</div>
     </div>
 </div>
 
-<!-- Hover Effect -->
+<!-- JavaScript for Form Handling -->
 <div class="snippet">
-    <div class="snippet-title">Hover Effect</div>
-    <div class="snippet-content hover-effect">
-        Hover over this box to see the effect.
+    <div class="snippet-title">Form Handling</div>
+    <div class="snippet-content">
+        <form id="simple-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <input type="button" value="Submit" onclick="submitForm()">
+        </form>
+        <div id="form-output"></div>
     </div>
 </div>
 
-<!-- Transition -->
+<!-- JavaScript to Manipulate Arrays -->
 <div class="snippet">
-    <div class="snippet-title">Transition</div>
-    <div class="snippet-content transition">
-        Hover over this box to see the scale transition.
+    <div class="snippet-title">Manipulate Arrays</div>
+    <div class="snippet-content">
+        <button class="button" onclick="manipulateArray()">Manipulate Array</button>
+        <div id="array-output"></div>
     </div>
 </div>
 
-<!-- Transform -->
+<!-- JavaScript for Event Listeners -->
 <div class="snippet">
-    <div class="snippet-title">Transform</div>
-    <div class="snippet-content rotate">
-        This box is rotated 45 degrees.
+    <div class="snippet-title">Event Listeners</div>
+    <div class="snippet-content">
+        <button class="button" id="listener-button">Click Me</button>
+        <div id="listener-output">Waiting for click...</div>
     </div>
 </div>
 
-<!-- Flexbox -->
+<!-- JavaScript for Loops -->
 <div class="snippet">
-    <div class="snippet-title">Flexbox</div>
-    <div class="snippet-content flex-container">
-        <div>Flex Item 1</div>
-        <div>Flex Item 2</div>
-        <div>Flex Item 3</div>
+    <div class="snippet-title">Loops</div>
+    <div class="snippet-content">
+        <button class="button" onclick="showLoops()">Show Loops Output</button>
+        <div id="loops-output"></div>
     </div>
 </div>
 
-<!-- Grid -->
+<!-- JavaScript to Change Attributes -->
 <div class="snippet">
-    <div class="snippet-title">Grid</div>
-    <div class="snippet-content grid-container">
-        <div>Grid Item 1</div>
-        <div>Grid Item 2</div>
-        <div>Grid Item 3</div>
-        <div>Grid Item 4</div>
+    <div class="snippet-title">Change Attributes</div>
+    <div class="snippet-content">
+        <button class="button" onclick="changeAttributes()">Change Attributes</button>
+        <img id="change-attributes" src="https://via.placeholder.com/150" alt="Placeholder Image">
     </div>
 </div>
 
-<!-- Media Query -->
+<!-- JavaScript for Timing Events -->
 <div class="snippet">
-    <div class="snippet-title">Media Query</div>
-    <div class="snippet-content responsive-text">
-        Resize the browser window to see the text size change.
+    <div class="snippet-title">Timing Events</div>
+    <div class="snippet-content">
+        <button class="button" onclick="startTimer()">Start Timer</button>
+        <button class="button" onclick="stopTimer()">Stop Timer</button>
+        <div id="timer-output">0</div>
     </div>
 </div>
 
-<!-- Pseudo-classes -->
+<!-- JavaScript for Animation -->
 <div class="snippet">
-    <div class="snippet-title">Pseudo-classes</div>
-    <div class="snippet-content pseudo-classes">
-        <a href="#">Unvisited link</a> <a href="#" style="color:purple;">Visited link</a>
+    <div class="snippet-title">Animation</div>
+    <div class="snippet-content">
+        <button class="button" onclick="startAnimation()">Start Animation</button>
+        <div id="animate-box" style="width: 50px; height: 50px; background: red; position: relative;"></div>
     </div>
 </div>
 
-<!-- Pseudo-elements -->
-<div class="snippet">
-    <div class="snippet-title">Pseudo-elements</div>
-    <div class="snippet-content pseudo-elements">
-        This box uses pseudo-elements.
-    </div>
-</div>
+<script>
+    // Change Content
+    function changeContent() {
+        document.getElementById('change-content').textContent = 'The text has been changed!';
+    }
 
-<!-- Variables -->
-<div class="snippet">
-    <div class="snippet-title">Variables</div>
-    <div class="
+    // Change Style
+    function changeStyle() {
+        const element = document.getElementById('change-style');
+        element.style.color = 'white';
+        element.style.backgroundColor = 'blue';
+        element.style.padding = '10px';
+    }
+
+    // Toggle Visibility
+    function toggleVisibility() {
+        const element = document.getElementById('toggle-element');
+        if (element.style.display === 'none') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+
+    // Form Handling
+    function submitForm() {
+        const name = document.getElementById('name').value;
+        document.getElementById('form-output').textContent = `Hello, ${name}!`;
+    }
+
+    // Manipulate Arrays
+    function manipulateArray() {
+        const fruits = ['Apple', 'Banana', 'Cherry'];
+        fruits.push('Durian');
+        document.getElementById('array-output').textContent = fruits.join(', ');
+    }
+
+    // Event Listeners
+    document.getElementById('listener-button').addEventListener('click', function() {
+        document.getElementById('listener-output').textContent = 'Button was clicked!';
+    });
+
+    // Loops
+    function showLoops() {
+        const numbers = [1, 2, 3, 4, 5];
+        let output = '';
+        for (let number of numbers) {
+            output += `Number: ${number}\n`;
+        }
+        document.getElementById('loops-output').textContent = output.trim();
+    }
+
+    // Change Attributes
+    function changeAttributes() {
+        const img = document.getElementById('change-attributes');
+        img.src = 'https://via.placeholder.com/100';
+        img.alt = 'Updated Image';
+    }
+
+    // Timing Events
+    let timer;
+    let count = 0;
+    function startTimer() {
+        timer = setInterval(function() {
+            document.getElementById('timer-output').textContent = ++count;
+        }, 1000);
+    }
+
+    function stopTimer() {
+        clearInterval(timer);
+    }
+
+    // Animation
+    function startAnimation() {
+        let pos = 0;
+        const box = document.getElementById('animate-box');
+        const id = setInterval(frame, 10);
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            } else {
+                pos++;
+                box.style.top = pos + 'px';
+                box.style.left = pos + 'px';
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
