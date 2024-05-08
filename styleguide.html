@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippet Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .snippet {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .snippet-title {
+            background-color: #f7f7f7;
+            padding: 5px 10px;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+        .snippet-content {
+            padding: 10px;
+        }
+
+        /* Text Color */
+        .text-color {
+            color: red;
+        }
+
+        /* Background Color */
+        .background-color {
+            background-color: #e7e7e7;
+        }
+
+        /* Font Size */
+        .font-size {
+            font-size: 20px;
+        }
+
+        /* Font Style */
+        .font-style {
+            font-style: italic;
+        }
+
+        /* Text Alignment */
+        .text-center {
+            text-align: center;
+        }
+
+        /* Border */
+        .border {
+            border: 2px solid blue;
+        }
+
+        /* Padding */
+        .padding {
+            padding: 15px;
+        }
+
+        /* Margin */
+        .margin {
+            margin: 15px;
+        }
+
+        /* Box Model */
+        .box-model {
+            margin: 10px;
+            padding: 15px;
+            border: 5px solid #333;
+            background: #f0f0f0;
+        }
+
+        /* Display */
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Position */
+        .position-relative {
+            position: relative;
+            left: 20px;
+        }
+
+        /* Float */
+        .float-left {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: #77dd77;
+        }
+
+        /* Clearfix */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Opacity */
+        .opacity {
+            opacity: 0.5;
+        }
+
+        /* Hover Effect */
+        .hover-effect:hover {
+            background-color: #ccc;
+        }
+
+        /* Transition */
+        .transition {
+            transition: transform 0.2s;
+        }
+        .transition:hover {
+            transform: scale(1.1);
+        }
+
+        /* Transform */
+        .rotate {
+            transform: rotate(45deg);
+        }
+
+        /* Flexbox */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
+
+        /* Media Query */
+        @media (max-width: 600px) {
+            .responsive-text {
+                font-size: 14px;
+            }
+        }
+
+        /* Pseudo-classes */
+        .pseudo-classes a:visited {
+            color: green;
+        }
+
+        /* Pseudo-elements */
+        .pseudo-elements::before {
+            content: "Before ";
+            color: blue;
+        }
+        .pseudo-elements::after {
+            content: " After";
+            color: red;
+        }
+
+        /* Variables */
+        :root {
+            --main-color: coral;
+        }
+        .using-variable {
+            color: var(--main-color);
+        }
+
+        /* Keyframes and Animations */
+        @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+<!-- Text Color -->
+<div class="snippet">
+    <div class="snippet-title">Text Color</div>
+    <div class="snippet-content text-color">
+        This text is red.
+    </div>
+</div>
+
+<!-- Background Color -->
+<div class="snippet">
+    <div class="snippet-title">Background Color</div>
+    <div class="snippet-content background-color">
+        This has a grey background.
+    </div>
+</div>
+
+<!-- Font Size -->
+<div class="snippet">
+    <div class="snippet-title">Font Size</div>
+    <div class="snippet-content font-size">
+        This text is 20px in size.
+    </div>
+</div>
+
+<!-- Font Style -->
+<div class="snippet">
+    <div class="snippet-title">Font Style</div>
+    <div class="snippet-content font-style">
+        This text is italic.
+    </div>
+</div>
+
+<!-- Text Alignment -->
+<div class="snippet">
+    <div class="snippet-title">Text Alignment</div>
+    <div class="snippet-content text-center">
+        This text is centered.
+    </div>
+</div>
+
+<!-- Border -->
+<div class="snippet">
+    <div class="snippet-title">Border</div>
+    <div class="snippet-content border">
+        This box has a blue border.
+    </div>
+</div>
+
+<!-- Padding -->
+<div class="snippet">
+    <div class="snippet-title">Padding</div>
+    <div class="snippet-content padding">
+        This box has 15px padding.
+    </div>
+</div>
+
+<!-- Margin -->
+<div class="snippet">
+    <div class="snippet-title">Margin</div>
+    <div class="snippet-content margin">
+        This box has 15px margin.
+    </div>
+</div>
+
+<!-- Box Model -->
+<div class="snippet">
+    <div class="snippet-title">Box Model</div>
+    <div class="snippet-content box-model">
+        This box demonstrates the box model with margin, border, and padding.
+    </div>
+</div>
+
+<!-- Display -->
+<div class="snippet">
+    <div class="snippet-title">Display</div>
+    <div class="snippet-content">
+        <div class="inline-block">Inline-block 1</div>
+        <div class="inline-block">Inline-block 2</div>
+    </div>
+</div>
+
+<!-- Position -->
+<div class="snippet">
+    <div class="snippet-title">Position</div>
+    <div class="snippet-content position-relative">
+        This box is moved 20px to the right.
+    </div>
+</div>
+
+<!-- Float and Clearfix -->
+<div class="snippet clearfix">
+    <div class="snippet-title">Float and Clearfix</div>
+    <div class="snippet-content">
+        <div class="float-left"></div>
+        <div class="float-left"></div>
+        <!-- Clearfix is applied to the parent container -->
+    </div>
+</div>
+
+<!-- Opacity -->
+<div class="snippet">
+    <div class="snippet-title">Opacity</div>
+    <div class="snippet-content opacity">
+        This text has 0.5 opacity.
+    </div>
+</div>
+
+<!-- Hover Effect -->
+<div class="snippet">
+    <div class="snippet-title">Hover Effect</div>
+    <div class="snippet-content hover-effect">
+        Hover over this box to see the effect.
+    </div>
+</div>
+
+<!-- Transition -->
+<div class="snippet">
+    <div class="snippet-title">Transition</div>
+    <div class="snippet-content transition">
+        Hover over this box to see the scale transition.
+    </div>
+</div>
+
+<!-- Transform -->
+<div class="snippet">
+    <div class="snippet-title">Transform</div>
+    <div class="snippet-content rotate">
+        This box is rotated 45 degrees.
+    </div>
+</div>
+
+<!-- Flexbox -->
+<div class="snippet">
+    <div class="snippet-title">Flexbox</div>
+    <div class="snippet-content flex-container">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+</div>
+
+<!-- Grid -->
+<div class="snippet">
+    <div class="snippet-title">Grid</div>
+    <div class="snippet-content grid-container">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+    </div>
+</div>
+
+<!-- Media Query -->
+<div class="snippet">
+    <div class="snippet-title">Media Query</div>
+    <div class="snippet-content responsive-text">
+        Resize the browser window to see the text size change.
+    </div>
+</div>
+
+<!-- Pseudo-classes -->
+<div class="snippet">
+    <div class="snippet-title">Pseudo-classes</div>
+    <div class="snippet-content pseudo-classes">
+        <a href="#">Unvisited link</a> <a href="#" style="color:purple;">Visited link</a>
+    </div>
+</div>
+
+<!-- Pseudo-elements -->
+<div class="snippet">
+    <div class="snippet-title">Pseudo-elements</div>
+    <div class="snippet-content pseudo-elements">
+        This box uses pseudo-elements.
+    </div>
+</div>
+
+<!-- Variables -->
+<div class="snippet">
+    <div class="snippet-title">Variables</div>
+    <div class="
